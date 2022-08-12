@@ -5,7 +5,7 @@
     <?php $this->load->view('admin/components/header');?>
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">$this->session
+<body class="hold-transition sidebar-mini layout-fixed">
 
     <?php if ($this->session->flashdata('input')){ ?>
     <script>

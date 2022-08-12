@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Register</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet"
@@ -74,7 +74,7 @@
                     <div class="signup-image">
                         <figure><img src="<?= base_url();?>assets/login_register/images/classico.png"
                                 alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
+                        <a href="<?= base_url();?>Login/index" class="signup-image-link">Saya Sudah Terdaftar !</a>
                     </div>
                 </div>
             </div>

@@ -28,12 +28,12 @@ class Register extends CI_controller {
 
 		if($pass == $re_pass){
 
-		$hasil = $this->m_user->register_user($id_user,$username, $email, $pass, 
+		$hasil = $this->m_user->register_user($id_user, $username, $email, $pass, 
 		$id_user_level, $id_status_verifikasi, $id_status_lulus);
 		
 
 		if($hasil==false){
-
+			
 			$this->session->set_flashdata('error_register','error_register');
 			redirect('Register/index');
 

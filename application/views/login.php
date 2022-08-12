@@ -37,34 +37,24 @@
                     <div class="signin-image">
                         <figure><img src="<?= base_url();?>assets/login_register/images/classico.png"
                                 alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">Buat Akun</a>
+                        <a href="<?= base_url();?>Register/index" class="signup-image-link">Buat Akun !</a>
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">Daftar</h2>
-                        <form method="POST" class="register-form" id="login-form">
+                        <h2 class="form-title">Log in</h2>
+                        <form action="<?= base_url();?>Login/proses_login" method="POST" class="register-form" id="login-form">
                             <div class="form-group">
-                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Your Name" />
+                                <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="username" id="username" placeholder="Your username" />
                             </div>
                             <div class="form-group">
-                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember
-                                    me</label>
+                                <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="password" placeholder="Password" />
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
                             </div>
                         </form>
-                        <div class="social-login">
-                            <span class="social-label"></span>
-                            <ul class="socials">
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
