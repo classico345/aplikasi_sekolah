@@ -18,12 +18,35 @@
 </head>
 
 <body>
+
     <?php if ($this->session->flashdata('register')){ ?>
     <script>
     swal({
         tittle: "success!",
         text: "Anda Telah Berhasil Register, Silahkan Login!",
         icon: "success"
+    });
+    </script>
+    <?php } ?>
+
+    <?php if ($this->session->flashdata('loggin_err_no_user')){ ?>
+    <script>
+    swal({
+        tittle: "error!",
+        text: "Anda Belum Terdaftar, Silahkan mendaftar !",
+        icon: "error"
+    });
+    </script>
+    <?php } ?>
+
+    <?php if ($this->session->flashdata('loggin_err_no_password')){ 
+    $message = $this->session->flashdata('loggin_err_no_password');    
+    ?>
+    <script>
+    swal({
+        tittle: "error!",
+        text: "Password Atau Username Yang Anda Masukan Salah !",
+        icon: "error"
     });
     </script>
     <?php } ?>

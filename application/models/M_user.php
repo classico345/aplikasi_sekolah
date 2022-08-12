@@ -2,6 +2,15 @@
 
 class M_user extends CI_model
 {
+    public function cek_login($username)
+    {
+
+        $hasil = $this->db->query("SELECT * FROM user
+        JOIN user_detail ON user.id_user_detail = user_detail.id_user_detail
+        WHERE username='$username'");
+        return $hasil;
+    }
+
     public function read_all_user_siswa()
     {
 
