@@ -6,6 +6,18 @@
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+
+<?php if ($this->session->flashdata('success_login')){ ?>
+    <script>
+    swal({
+        tittle: "Berhasil Login!",
+        text: "Anda Telah Login Sebagai Siswa !",
+        icon: "success"
+    });
+    </script>
+    <?php } ?>
+
+
     <div class="wrapper">
 
         <!-- Preloader -->
