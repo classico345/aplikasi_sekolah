@@ -257,10 +257,9 @@
                                                                         value="<?=$nidn?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="ijazah">ijazah</label>
-                                                                    <input type="text" class="form-control" id="ijazah"
-                                                                        name="ijazah" aria-describedby="emailHelp"
-                                                                        value="<?=$ijazah?>">
+                                                                    <label for="foto">ijazah</label>
+                                                                    <input type="file" class="form-control" id="foto"
+                                                                        name="foto" aria-describedby="emailHelp">
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="skhun">skhun</label>
@@ -323,8 +322,8 @@
                                                                 <input type="text" value="<?=$foto?>" name="foto_old"
                                                                     hidden>
 
-                                                                <input type="text" value="<?=$id_pengumuman?>"
-                                                                    name="id_pengumuman" hidden>
+                                                                <input type="text" value="<?=$id_user?>" name="id_user"
+                                                                    hidden>
 
 
                                                                 <button type="submit"
@@ -429,8 +428,8 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="alamat">Alamat</label>
-                                                <textarea class="form-control" id="alamat" name="alamat"
-                                                    rows="3" required></textarea>
+                                                <textarea class="form-control" id="alamat" name="alamat" rows="3"
+                                                    required></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label for="tempat_lahir">Tempat Lahir</label>
@@ -439,7 +438,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="tanggal_lahir">Tanggal Lahir</label>
-                                                <input type="text" class="form-control" id="tanggal_lahir"
+                                                <input type="date" class="form-control" id="tanggal_lahir"
                                                     name="tanggal_lahir" aria-describedby="emailHelp" required>
                                             </div>
                                             <div class="form-group">
@@ -463,14 +462,14 @@
                                                     aria-describedby="emailHelp" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="ijazah">Ijazah</label>
-                                                <input type="text" class="form-control" id="ijazah" name="ijazah"
-                                                    aria-describedby="emailHelp" required>
+                                                <label for="foto">Ijazah</label>
+                                                <input type="file" class="form-control" id="foto" name="foto"
+                                                    aria-describedby="emailHelp">
                                             </div>
                                             <div class="form-group">
-                                                <label for="skhun">Skhun</label>
-                                                <input type="text" class="form-control" id="skhun" name="skhun"
-                                                    aria-describedby="emailHelp" required>
+                                                <label for="foto">Skhun</label>
+                                                <input type="file" class="form-control" id="foto" name="foto"
+                                                    aria-describedby="emailHelp">
                                             </div>
                                             <div class="form-group">
                                                 <label for="foto">Foto</label>
