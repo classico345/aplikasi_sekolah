@@ -54,4 +54,23 @@ class M_user extends CI_model
 
     }
 
+    public function update_siswa($id_user_detail, $nama_lengkap, $alamat, $tempat_lahir, $tanggal_lahir, $agama, $nik, $jenis_kelamin, $nidn,
+    $ijazah, $skhun, $foto, $kelas, $nilai_ipa, $nilai_ips, $nilai_matematika, $nilai_bahasa_inggris, $nilai_bahasa_indonesia, $id_status_verifikasi, $id_status_lulus ) 
+    {
+        $this->db->trans_start();
+
+        $this->db->query("UPDATE siswa SET id_user_detail='$id_user_detail', nama_lengkap='$nama_lengkap', alamat='$alamat', tempat_lahir='$tempat_lahir', 
+        tanggal_lahir='$tanggal_lahir', agama='$agama', nik='$nik', jenis_kelamin='$jenis_kelamin', nidn='$nidn', ijazah='$ijazah', skhun='$skhun', foto='$foto',
+        kelas='$kelas', nilai_ipa='$nilai_ipa', nilai_ips='$nilai_ips', nilai_matematika='$nilai_matematika', nilai_bahasa_inggris='$nilai_bahasa_inggris',
+        nilai_bahasa_indonesia='$nilai_bahasa_indonesia', id_status_verifikasi='$id_status_verifikasi'
+        WHERE id_user='$id_user'");
+
+    $this->db->trans_complete();
+    if ($this->db->trans_status() == true) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 }
