@@ -232,7 +232,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="tanggal_lahir">tanggal_lahir</label>
-                                                                    <input type="text" class="form-control"
+                                                                    <input type="date" class="form-control"
                                                                         id="tanggal_lahir" name="tanggal_lahir"
                                                                         aria-describedby="emailHelp"
                                                                         value="<?=$tanggal_lahir?>">
@@ -358,7 +358,7 @@
                                                                 <div class="row">
                                                                     <div class="col">
 
-                                                                        <input type="text" name="id_pengumuman"
+                                                                        <input type="text" name="id_user"
                                                                             value="<?=$id_pengumuman?>" hidden>
                                                                         <input type="text" name="foto_pengumuman_old"
                                                                             value=" <?=$foto_pengumuman?>" hidden>
