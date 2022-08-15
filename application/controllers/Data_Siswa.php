@@ -41,6 +41,43 @@ class Data_Siswa extends CI_Controller
 		$foto_name = md5($id_user_detail.$nama_lengkap.$alamat.$tempat_lahir.$tanggal_lahir.
 		$agama.$nik.$jenis_kelamin.$nidn.$ijazah.$skhun.$foto.$kelas.$nilai_ipa.$nilai_ips.
 		$nilai_bahasa_inggris.$nilai_bahasa_indonesia.$id_status_verifikasi.$id_status_lulus.rand(1,9999));
+
+		$path = './assets/gambar/';
+
+		$this->load->library('upload');
+		$config['upload_path'] = './assets/gambar';
+		$config['allowed_types'] = 'jpg|png|jpeg|gif';
+		$config['max_size'] = '2048'; //2MB max
+		$config['max_width'] = '4480'; // pixel
+		$config['max_height'] = '4480'; // pixel
+		$config['file_name'] = $foto_name;
+		$this->upload->initialize($config);
+		$foto_upload = $this->upload->do_upload('foto');
+
+		if ($foto_upload)
+		{
+			$foto = $this->upload->data();
+		} else {
+			$this->session->set_flashdata('error_file_gambar_berita',
+			'error_file_gambar_berita');
+			redirect('Data_Siswa/view_admin');
+		}
+
+		$hasil = $this->m_user->insert_siswa($id_user_detail, $nama_lengkap, $alamat, $tempat_lahir, $tanggal_lahir, $agama, $nik,
+		$jenis_kelamin, $nidn, $ijazah['file'], $skhun['file'], $foto['file'], $kelas, $nilai_ipa, $nilai_ips, $nilai_matematika,
+		$nilai_bahahsa_inggris, $nilai_bahasa_indonesia, $id_status_verifikasi, $id_status_lulus );
+
+
+		if($hasil==false){
+
+			$this->session->set_flashdata('error_input','error_input');
+			redirect('Data_Siswa/view_admin');
+
+		}else{
+
+			$this->session->set_flashdata('input','input');
+			redirect('Data_Siswa/view_admin');
+		}
 	}
 
 	public function edit_siswa()
@@ -70,11 +107,12 @@ class Data_Siswa extends CI_Controller
 		$agama.$nik.$jenis_kelamin.$nidn.$ijazah.$skhun.$foto.$kelas.$nilai_ipa.$nilai_ips.
 		$nilai_bahasa_inggris.$nilai_bahasa_indonesia.$id_status_verifikasi.$id_status_lulus.rand(1,9999));
 
+
 	}
 
 	public function hapus_siswa()
 	{
-		
+
 		$id_user_detail = $this->input->post('id_user_detail');
 		$nama_lengkap = $this->input->post('nama_lengkap');
 		$alamat = $this->input->post('alamat');
