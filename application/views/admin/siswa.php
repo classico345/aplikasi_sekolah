@@ -211,7 +211,7 @@
                                                                         value="<?=$password?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="nama_lengkap">nama_lengkap</label>
+                                                                    <label for="nama_lengkap">nama lengkap</label>
                                                                     <input type="text" class="form-control"
                                                                         id="nama_lengkap" name="nama_lengkap"
                                                                         aria-describedby="emailHelp"
@@ -224,14 +224,14 @@
                                                                         value="<?=$alamat?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="tempat_lahir">tempat_lahir</label>
+                                                                    <label for="tempat_lahir">tempat lahir</label>
                                                                     <input type="text" class="form-control"
                                                                         id="tempat_lahir" name="tempat_lahir"
                                                                         aria-describedby="emailHelp"
                                                                         value="<?=$tempat_lahir?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="tanggal_lahir">tanggal_lahir</label>
+                                                                    <label for="tanggal_lahir">tanggal lahir</label>
                                                                     <input type="date" class="form-control"
                                                                         id="tanggal_lahir" name="tanggal_lahir"
                                                                         aria-describedby="emailHelp"
@@ -244,7 +244,7 @@
                                                                         value="<?=$nik?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="jenis_kelamin">jenis_kelamin</label>
+                                                                    <label for="jenis_kelamin">jenis kelamin</label>
                                                                     <input type="text" class="form-control"
                                                                         id="jenis_kelamin" name="jenis_kelamin"
                                                                         aria-describedby="emailHelp"
@@ -263,7 +263,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="skhun">skhun</label>
-                                                                    <input type="text" class="form-control" id="skhun"
+                                                                    <input type="file" class="form-control" id="skhun"
                                                                         name="skhun" aria-describedby="emailHelp"
                                                                         value="<?=$skhun?>">
                                                                 </div>
@@ -279,14 +279,14 @@
                                                                         value="<?=$kelas?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="nilai_ipa">nilai_ipa</label>
+                                                                    <label for="nilai_ipa">nilai ipa</label>
                                                                     <input type="text" class="form-control"
                                                                         id="nilai_ipa" name="nilai_ipa"
                                                                         aria-describedby="emailHelp"
                                                                         value="<?=$nilai_ipa?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <label for="nilai_ips">nilai_ips</label>
+                                                                    <label for="nilai_ips">nilai ips</label>
                                                                     <input type="text" class="form-control"
                                                                         id="nilai_ips" name="nilai_ips"
                                                                         aria-describedby="emailHelp"
@@ -294,7 +294,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label
-                                                                        for="nilai_matematika">nilai_matematika</label>
+                                                                        for="nilai_matematika">nilai matematika</label>
                                                                     <input type="text" class="form-control"
                                                                         id="nilai_matematika" name="nilai_matematika"
                                                                         aria-describedby="emailHelp"
@@ -302,7 +302,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label
-                                                                        for="nilai_bahasa_inggris">nilai_bahasa_inggris</label>
+                                                                        for="nilai_bahasa_inggris">nilai bahasa inggris</label>
                                                                     <input type="text" class="form-control"
                                                                         id="nilai_bahasa_inggris"
                                                                         name="nilai_bahasa_inggris"
@@ -311,7 +311,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label
-                                                                        for="nilai_bahasa_indonesia">nilai_bahasa_indonesia</label>
+                                                                        for="nilai_bahasa_indonesia">nilai bahasa indonesia</label>
                                                                     <input type="text" class="form-control"
                                                                         id="nilai_bahasa_indonesia"
                                                                         name="nilai_bahasa_indonesia"
@@ -330,211 +330,206 @@
                                                                     class="btn btn-primary">Simpan</button>
                                                             </form>
                                                         </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save
-                                                                changes</button>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- modal Hapus Siswa -->
-                                            <div class="modal fade" id="hapus" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Hapus Siswa
-                                                            </h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <form action="<?=base_url();?>Data_siswa/hapus_siswa"
-                                                                enctype="multipart/form-data" method="POST">
-                                                                <div class="row">
-                                                                    <div class="col">
+                                </div>
+                                <!-- modal Hapus Siswa -->
+                                <div class="modal fade" id="hapus" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Hapus Siswa
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="<?=base_url();?>Data_siswa/hapus_siswa"
+                                                    enctype="multipart/form-data" method="POST">
+                                                    <div class="row">
+                                                        <div class="col">
 
-                                                                        <input type="text" name="id_user"
-                                                                            value="<?=$id_pengumuman?>" hidden>
-                                                                        <input type="text" name="foto_pengumuman_old"
-                                                                            value=" <?=$foto_pengumuman?>" hidden>
-                                                                        <p>Apakah kamu yakin ingin manghapus data
-                                                                            ini?</i></b></p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-danger"
-                                                                        data-dismiss="modal">Tidak</button>
-                                                                    <button type="submit" class="btn btn-primary">
-                                                                        Ya</button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save
-                                                                changes</button>
+                                                            <input type="text" name="id_user"
+                                                                value="<?=$id_pengumuman?>" hidden>
+                                                            <input type="text" name="foto_pengumuman_old"
+                                                                value=" <?=$foto_pengumuman?>" hidden>
+                                                            <p>Apakah kamu yakin ingin manghapus data
+                                                                ini?</i></b></p>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-dismiss="modal">Tidak</button>
+                                                        <button type="submit" class="btn btn-primary">
+                                                            Ya</button>
+                                                    </div>
+                                                </form>
                                             </div>
-                                            <?php endforeach;?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-                        </div>
-                        <!-- Modal Tambah Siswa -->
-                        <div class="modal fade" id="tambah" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Tambah
-                                            Siswa</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="<?=base_url();?>Data_siswa/tambah_siswa"
-                                            enctype="multipart/form-data" method="POST">
-                                            <div class="form-group">
-                                                <label for="username">Username</label>
-                                                <input type="text" class="form-control" id="username" name="username"
-                                                    aria-describedby="emailHelp" required>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save
+                                                    changes</button>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="email">Email</label>
-                                                <input type="text" class="form-control" id="email" name="email"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="password">Password</label>
-                                                <input type="text" class="form-control" id="password" name="password"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nama_lengkap">Nama Lengkap</label>
-                                                <input type="text" class="form-control" id="nama_lengkap"
-                                                    name="nama_lengkap" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="alamat">Alamat</label>
-                                                <textarea class="form-control" id="alamat" name="alamat" rows="3"
-                                                    required></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="tempat_lahir">Tempat Lahir</label>
-                                                <input type="text" class="form-control" id="tempat_lahir"
-                                                    name="tempat_lahir" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="tanggal_lahir">Tanggal Lahir</label>
-                                                <input type="date" class="form-control" id="tanggal_lahir"
-                                                    name="tanggal_lahir" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="agama">Agama</label>
-                                                <input type="text" class="form-control" id="agama" name="agama"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nik">Nik</label>
-                                                <input type="text" class="form-control" id="nik" name="nik"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="jenis_kelamin">Jenis Kelamin</label>
-                                                <input type="text" class="form-control" id="jenis_kelamin"
-                                                    name="jenis_kelamin" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nidn">Nidn</label>
-                                                <input type="text" class="form-control" id="nidn" name="nidn"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="foto">Ijazah</label>
-                                                <input type="file" class="form-control" id="foto" name="foto"
-                                                    aria-describedby="emailHelp">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="foto">Skhun</label>
-                                                <input type="file" class="form-control" id="foto" name="foto"
-                                                    aria-describedby="emailHelp">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="foto">Foto</label>
-                                                <input type="file" class="form-control" id="foto" name="foto"
-                                                    aria-describedby="emailHelp">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="kelas">Kelas</label>
-                                                <input type="text" class="form-control" id="kelas" name="kelas"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nilai_ipa">Nilai Ipa</label>
-                                                <input type="text" class="form-control" id="nilai_ipa" name="nilai_ipa"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nilai_ips">Nilai Ips</label>
-                                                <input type="text" class="form-control" id="nilai_ips" name="nilai_ips"
-                                                    aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nilai_matematika">Nilai Matematika</label>
-                                                <input type="text" class="form-control" id="nilai_matematika"
-                                                    name="nilai_matematika" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nilai_bahasa_inggris">Nilai Bahasa Inggris</label>
-                                                <input type="text" class="form-control" id="nilai_bahasa_inggris"
-                                                    name="nilai_bahasa_inggris" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nilai_bahasa_indonesia">Nilai Bahasa Indonesia</label>
-                                                <input type="text" class="form-control" id="nilai_bahasa_indonesia"
-                                                    name="nilai_bahasa_indonesia" aria-describedby="emailHelp" required>
-                                            </div>
-
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
+                                <?php endforeach;?>
+                                </tbody>
+                                </table>
                             </div>
+                            <!-- /.card-body -->
                         </div>
-                        <!-- /.col -->
+                        <!-- /.card -->
                     </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
-        </div>
-        <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-            All rights reserved.
-            <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 3.2.0
-            </div>
-        </footer>
+                    <!-- Modal Tambah Siswa -->
+                    <div class="modal fade" id="tambah" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Tambah
+                                        Siswa</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="<?=base_url();?>Data_siswa/tambah_siswa" enctype="multipart/form-data"
+                                        method="POST">
+                                        <div class="form-group">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" id="username" name="username"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="text" class="form-control" id="email" name="email"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input type="text" class="form-control" id="password" name="password"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nama_lengkap">Nama Lengkap</label>
+                                            <input type="text" class="form-control" id="nama_lengkap"
+                                                name="nama_lengkap" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="alamat">Alamat</label>
+                                            <textarea class="form-control" id="alamat" name="alamat" rows="3"
+                                                required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tempat_lahir">Tempat Lahir</label>
+                                            <input type="text" class="form-control" id="tempat_lahir"
+                                                name="tempat_lahir" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tanggal_lahir">Tanggal Lahir</label>
+                                            <input type="date" class="form-control" id="tanggal_lahir"
+                                                name="tanggal_lahir" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="agama">Agama</label>
+                                            <input type="text" class="form-control" id="agama" name="agama"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nik">Nik</label>
+                                            <input type="text" class="form-control" id="nik" name="nik"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                                            <input type="text" class="form-control" id="jenis_kelamin"
+                                                name="jenis_kelamin" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nidn">Nidn</label>
+                                            <input type="text" class="form-control" id="nidn" name="nidn"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="foto">Ijazah</label>
+                                            <input type="file" class="form-control" id="foto" name="foto"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="foto">Skhun</label>
+                                            <input type="file" class="form-control" id="foto" name="foto"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="foto">Foto</label>
+                                            <input type="file" class="form-control" id="foto" name="foto"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="kelas">Kelas</label>
+                                            <input type="text" class="form-control" id="kelas" name="kelas"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nilai_ipa">Nilai Ipa</label>
+                                            <input type="text" class="form-control" id="nilai_ipa" name="nilai_ipa"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nilai_ips">Nilai Ips</label>
+                                            <input type="text" class="form-control" id="nilai_ips" name="nilai_ips"
+                                                aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nilai_matematika">Nilai Matematika</label>
+                                            <input type="text" class="form-control" id="nilai_matematika"
+                                                name="nilai_matematika" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nilai_bahasa_inggris">Nilai Bahasa Inggris</label>
+                                            <input type="text" class="form-control" id="nilai_bahasa_inggris"
+                                                name="nilai_bahasa_inggris" aria-describedby="emailHelp" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nilai_bahasa_indonesia">Nilai Bahasa Indonesia</label>
+                                            <input type="text" class="form-control" id="nilai_bahasa_indonesia"
+                                                name="nilai_bahasa_indonesia" aria-describedby="emailHelp" required>
+                                        </div>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.2.0
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 

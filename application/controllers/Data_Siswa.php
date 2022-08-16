@@ -64,8 +64,8 @@ class Data_Siswa extends CI_Controller
 		}
 
 		$hasil = $this->m_user->insert_siswa($id_user_detail, $nama_lengkap, $alamat, $tempat_lahir, $tanggal_lahir, $agama, $nik,
-		$jenis_kelamin, $nidn, $ijazah['file'], $skhun['file'], $foto['file'], $kelas, $nilai_ipa, $nilai_ips, $nilai_matematika,
-		$nilai_bahahsa_inggris, $nilai_bahasa_indonesia, $id_status_verifikasi, $id_status_lulus );
+		$jenis_kelamin, $nidn, $ijazah, $skhun, $foto, $kelas, $nilai_ipa, $nilai_ips, $nilai_matematika,
+		$nilai_bahasa_inggris, $nilai_bahasa_indonesia, $id_status_verifikasi, $id_status_lulus );
 
 
 		if($hasil==false){
